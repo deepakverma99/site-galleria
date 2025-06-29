@@ -66,7 +66,7 @@ async function editMessage(ts) {
   const response = await axios.post('https://slack.com/api/chat.update', {
     channel,
     ts,
-    text: '✏️ Message has been edited!',
+    text: 'Message has been edited!',
   }, { headers });
 
   console.log('Message Edited:', response.data);
